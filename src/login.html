@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .A{
+            height: 98vh;
+            width: auto;
+            background:linear-gradient(#b65e5e,rgb(75, 75, 148),rgb(146, 146, 50));
+            position: relative;
+            
+            
+        }
+        .B{
+            height: 85vh;
+            width: 57vh;
+            background-color: aqua;
+            margin-left: 70vh;
+            position: absolute;
+
+            margin-top: 45px;
+        }
+        input{
+            height: 30px;
+            width: 290px;
+            background-color: azure;
+            border: none;
+        }
+        .select{
+            height: 35px;
+            width: 290px;
+            background-color: azure;
+            border: none;
+            /* margin-top: 20px; */
+            /* margin-left: 23px; */
+        }
+    </style>
+
+</head>
+<body>
+   <div class="A">
+    <div class="B">
+        <h2 style="text-align: center;">___  Registration form  ___</h2>
+        <form action="/submit" method="POST">
+            <div style="margin-left: 20px;">
+                <label for="name">Name:</label><br/>
+                <input type="text"id="name" name="name"/>
+            </div>
+            <div style="margin-left: 20px;margin-top: 20px;">
+                <label for="name">Email:</label><br/>
+                <input type="email"id="email" name="email"/>
+            </div>
+            <div style="margin-left: 20px;margin-top: 20px;">
+                <label for="name">D.o.b:</label><br/>
+                <input type="datetime-local"id="dob" name="dob"/>
+            </div>
+            <div style="margin-left: 20px;margin-top: 20px;">
+                <label for="name">Phone:</label><br/>
+                <input type="number"id="number" name="number"/>
+            </div>
+            <div style="margin-left: 20px;margin-top: 20px;">
+                <label for="name">Gender:</label><br/>
+                <select class="select" name="gender" id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div style="margin-left: 20px;margin-top: 20px;">
+                <label for="name">City:</label><br/>
+                <select class="select" name="city" id="city">
+                    <option>Lucknow</option>
+                    <option>Prayagraj</option>
+                    <option>Varanashi</option>
+                </select>
+            </div>
+            <div style="margin-left: 20px;margin-top: 20px;">
+                <input style="background-color: blue;" type="submit" value=" submit">
+            </div>
+               
+        </form>
+    </div>
+   </div> 
+</body>
+</html>
